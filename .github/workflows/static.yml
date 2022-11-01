@@ -4,13 +4,12 @@ on:
   push:
   workflow_dispatch:
 
-
 jobs:
   build-deploy:
     runs-on: ubuntu-20.04
     name: build
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: main
       - name: Deploy
